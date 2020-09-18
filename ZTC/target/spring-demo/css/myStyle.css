@@ -1,0 +1,1002 @@
+/* 统一样式开始 */
+
+input::-webkit-input-placeholder {
+    /* WebKit browsers 适配谷歌 */
+    color: #BDCADA;
+}
+
+input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 适配火狐 */
+    color: #BDCADA;
+}
+
+input::-moz-placeholder {
+    /* Mozilla Firefox 19+ 适配火狐 */
+    color: #BDCADA;
+}
+
+input:-ms-input-placeholder {
+    /* Internet Explorer 10+  适配ie*/
+    color: #BDCADA;
+}
+
+body {
+    line-height: 2;
+    background-color: #f6f6f8;
+}
+
+.hidden {
+    display: none;
+}
+
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.container {
+    width: 820px;
+    height: 100%;
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0 30px;
+    padding-top: 40px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.container .edit,
+.container .add,
+.container .remove,
+.container .file {
+    text-align: center;
+    color: #008c8c;
+}
+
+.container .edit:hover,
+.container .add:hover,
+.container .remove:hover,
+.container .file:hover {
+    color: #5dd5c8;
+}
+
+.container .edit i,
+.container .add i,
+.container .remove i,
+.container .file i {
+    width: 16px !important;
+    height: 16px !important;
+    display: inline-block;
+    line-height: 16px;
+}
+
+.container .edit span,
+.container .add span,
+.container .remove span {
+    width: 28px !important;
+    height: 16px;
+    display: inline-block;
+    line-height: 16px;
+    font-size: 14px;
+}
+
+.container .divider {
+    width: 1px !important;
+    height: 24px;
+    float: left;
+    background-color: #f2f3f3;
+}
+
+.container .tag_line {
+    width: 10px !important;
+    height: 25px !important;
+    float: left;
+    color: #008c8c;
+}
+
+.container hr {
+    background-color: #f2f3f3;
+}
+
+.container .title {
+    font-size: 18px;
+    width: 90px;
+    height: 25px;
+    display: inline-block;
+    line-height: 25px;
+}
+
+.container .title::before {
+    content: "";
+    width: 3px;
+    height: 14px;
+    background-color: #53cac3;
+    display: inline-block;
+    line-height: 14px;
+    margin-right: 10px;
+}
+
+.active_sex {
+    background-color: #c8f6f2 !important;
+}
+
+.container .isInternship .isInter input {
+    width: 10px;
+    height: 10px;
+}
+
+
+/* 统一样式结束 */
+/* 个人信息开始 */
+
+.container .personal_Info {
+    width: 760px;
+    height: 120px;
+}
+
+.container .personal_Info .left {
+    width: 545px;
+    height: 114px;
+    float: left;
+    position: relative;
+}
+
+.container .personal_Info .left .main_Info .name {
+    width: 120px;
+    height: 33px;
+    position: relative;
+    margin-bottom: 10px;
+    background-color: #f6f6f6;
+    font-size: 24px;
+    font-weight: 400;
+    display: inline-block;
+    line-height: 33px;
+    text-align: center;
+}
+
+.container .personal_Info .sex {
+    display: none;
+}
+
+.container .personal_Info .left .main_Info i {
+    font-size: 27px;
+    color: rgba(0, 150, 255, 0.7);
+    position: absolute;
+    top: -9px;
+    left: 130px;
+}
+
+.container .personal_Info .aux_Info p:nth-child(1) {
+    margin-bottom: 10px;
+}
+
+.container .personal_Info .aux_Info span {
+    width: 120px;
+    height: 24px;
+    background-color: #f6f6f6;
+    display: block;
+    float: left;
+    text-align: center;
+    line-height: 24px;
+    margin-right: 30px;
+}
+
+
+.container .personal_Info .right {
+    width: 140px;
+    height: 140px;
+    float: right;
+    position: absolute;
+    right: 30px;
+    top: 4px;
+    text-align: center;
+}
+
+.container .personal_Info .right .preview {
+    width: 56px;
+    height: 20px;
+    font-size: 14px;
+    display: inline-block;
+    line-height: 20px;
+}
+
+.container .personal_Info .right .preview:hover {
+    color: #5dd5c8;
+}
+
+.container .personal_Info .right .headPhoto {
+    background: url(../img/header.png) center 0/100%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.container .personal_Info .right .headPhoto:hover {
+    opacity: 60%;
+    background-image: url(../img/camera.png);
+}
+
+/* 个人信息结束 */
+/* 期望职位开始 */
+
+.container .expected {
+    width: 760px;
+    height: 90px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.container .expected .required {
+    margin-top: 15px;
+}
+
+.container .expected .required span {
+    width: 120px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    float: left;
+    font-size: 14px;
+    margin-right: 20px;
+    background-color: #f6f6f6;
+}
+
+.container .expected .edit_btn a {
+    position: absolute;
+    right: 46px;
+    bottom: 32px;
+}
+
+/* 期望职位结束 */
+/* 实习经历开始 */
+
+.container .internship {
+    width: 760px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.container .internship .add {
+    position: absolute;
+    right: 45px;
+    top: 0;
+}
+
+.container .internship .main {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.container .internship .main:hover {
+    cursor: pointer;
+    background-color: #f2f5f9;
+}
+
+
+.container .internship .main .company {
+    position: relative;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.container .internship .main .company h3 {
+    width: 180px;
+    height: 24px;
+    float: left;
+    line-height: 24px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.container .internship .main .company .time {
+    width: 160px;
+    height: 24px;
+    display: inline-block;
+    text-align: center;
+    line-height: 24px;
+    margin-left: 30px;
+    color: #9fa3b0;
+    font-size: 12px;
+}
+
+.container .internship .main .company .remove {
+    position: absolute;
+    right: 110px;
+    top: 0;
+}
+
+.container .internship .main .company .edit {
+    position: absolute;
+    right: 45px;
+    top: 0;
+}
+
+.container .internship .main .position {
+    margin-bottom: 10px;
+}
+
+.container .internship .main .position h3 span {
+    width: 60px;
+    height: 24px;
+    float: left;
+    font-size: 15px;
+    margin: 0 15px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+}
+
+.container .internship .main .position h3 .divider {
+    height: 20px;
+    margin-top: 3px;
+}
+
+.container .internship .main .position h3 .tag_internship {
+    width: 44px;
+    height: 24px;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 24px;
+    color: #3a98fc;
+    border: 1px solid #3a98fc;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.container .internship .main .position h3 span:first-child {
+    margin-left: 0;
+}
+
+.container .internship .main .content {
+    margin-bottom: 10px;
+}
+
+.container .internship .main .type {
+    margin-left: 4px;
+    width: 42px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #61687c;
+    float: left;
+    line-height: 18px;
+}
+
+.container .internship .main .text {
+    width: 550px;
+    height: 100%;
+    float: left;
+    margin-top: -2px;
+    margin-left: 9px;
+    color: #999daa;
+    line-height: 21px;
+}
+
+.container .internship .main .performance {
+    margin-bottom: 10px;
+}
+
+.container .internship .main .skills {
+    margin-bottom: 10px;
+}
+
+.container .internship .main .skills span {
+    height: 22px;
+    display: inline-block;
+    text-align: center;
+    line-height: 22px;
+    padding: 0 14px;
+    border: 1px solid #cfd1d7;
+    color: #9fa3b0;
+    font-size: 12px;
+    margin-right: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* 实习经历结束 */
+/* 项目经历开始 */
+
+.container .project {
+    width: 760px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.container .project .add {
+    position: absolute;
+    right: 45px;
+    top: 0;
+}
+
+.container .project .main {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.container .project .main:hover {
+    cursor: pointer;
+    background-color: #f2f5f9;
+}
+
+.container .project .main .projectName {
+    position: relative;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.container .project .main .projectName h3 {
+    width: 180px;
+    height: 24px;
+    float: left;
+    line-height: 24px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.container .project .main .projectName .time {
+    width: 160px;
+    height: 24px;
+    display: inline-block;
+    text-align: center;
+    line-height: 24px;
+    margin-left: 30px;
+    color: #9fa3b0;
+    font-size: 12px;
+}
+
+.container .project .main .projectName .remove {
+    position: absolute;
+    right: 110px;
+    top: 0;
+}
+
+.container .project .main .projectName .edit {
+    position: absolute;
+    right: 45px;
+    top: 0;
+}
+
+.container .project .main .role {
+    margin-bottom: 15px;
+}
+
+.container .project .main .role .projectRole {
+    width: 160px;
+    margin-left: 2px !important;
+}
+
+.container .project .main .role h3 span {
+    width: 60px;
+    height: 24px;
+    float: left;
+    font-size: 15px;
+    margin: 0 15px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+}
+
+.container .project .main .role h3 span:first-child {
+    margin-left: -7px;
+}
+
+.container .project .main .content {
+    margin-bottom: 10px;
+}
+
+.container .project .main .type {
+    width: 42px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #61687c;
+    float: left;
+    line-height: 18px;
+    margin-left: 5px;
+}
+
+.container .project .main .text {
+    width: 550px;
+    height: 100%;
+    float: left;
+    margin-top: -2px;
+    margin-left: 5px;
+    color: #999daa;
+    line-height: 21px;
+}
+
+.container .project .main .performance {
+    margin-bottom: 10px;
+}
+
+.container .project .main .projectLink {
+    margin-bottom: 10px;
+}
+
+.container .project .main .projectLink .type {
+    width: 70px;
+}
+
+/* 项目经历结束 */
+/* 教育经历开始 */
+
+.container .education {
+    width: 760px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.container .education .add {
+    position: absolute;
+    right: 45px;
+    top: 0;
+}
+
+.container .education .main {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.container .education .main:hover {
+    cursor: pointer;
+    background-color: #f2f5f9;
+}
+
+.container .education .main .schoolName {
+    position: relative;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.container .education .main .schoolName h3 {
+    width: 180px;
+    height: 24px;
+    float: left;
+    line-height: 24px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.container .education .main .schoolName .time {
+    width: 160px;
+    height: 24px;
+    display: inline-block;
+    text-align: center;
+    line-height: 24px;
+    margin-left: 30px;
+    color: #9fa3b0;
+    font-size: 12px;
+}
+
+.container .education .main .schoolName .remove {
+    position: absolute;
+    right: 110px;
+    top: 0;
+}
+
+.container .education .main .schoolName .edit {
+    position: absolute;
+    right: 45px;
+    top: 0;
+}
+
+.container .education .main .info {
+    margin-bottom: 10px;
+}
+
+.container .education .main .info .major {
+    width: 140px;
+    text-align: left;
+}
+
+.container .education .main .info h3 span {
+    width: 60px;
+    height: 24px;
+    float: left;
+    font-size: 15px;
+    margin: 0 15px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+}
+
+.container .education .main .info h3 .divider {
+    height: 20px;
+    margin-top: 3px;
+}
+
+.container .education .main .info h3 span:first-child {
+    margin-left: 0;
+}
+
+.container .education .main .experience {
+    margin-bottom: 10px;
+}
+
+.container .education .main .experience .text {
+    width: 580px;
+    height: 100%;
+    float: left;
+    margin-top: -2px;
+    margin-left: 5px;
+    color: #999daa;
+    line-height: 21px;
+}
+
+/* 教育经历结束 */
+/* 资格证书开始 */
+
+.container .certificate {
+    width: 760px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.container .certificate .add {
+    position: absolute;
+    right: 45px;
+    top: 0;
+}
+
+.container .certificate .main {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.container .certificate .main:hover {
+    cursor: pointer;
+    background-color: #f2f5f9;
+}
+
+.container .certificate .main .certificateName {
+    position: relative;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.container .certificate .main .certificateName .certificateInfo {
+    width: 600px;
+}
+
+.container .certificate .main .certificateName .certificateName_type {
+    height: 21px;
+    float: left;
+    margin: 5px 0;
+    margin-right: 10px;
+    padding: 0 10px;
+    border: 1px solid #d0d1d6;
+    color: #61687c;
+    font-size: 12px;
+    line-height: 21px;
+}
+
+.container .certificate .main .certificateName .edit {
+    position: absolute;
+    right: 45px;
+    top: 0;
+}
+
+/* 资格证书结束 */
+/* 个人优势开始 */
+
+.container .advantage {
+    width: 760px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.container .advantage .main {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.container .advantage .main .content {
+    position: relative;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.container .advantage .main .content .advantage_info {
+    width: 610px;
+    color: #999daa;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.container .advantage .main .content:hover {
+    cursor: pointer;
+    background-color: #f2f5f9;
+}
+
+.container .advantage .main .content .edit {
+    position: absolute;
+    right: 45px;
+    top: 0;
+}
+
+/* 个人优势结束 */
+/* 简历管理开始 */
+
+.container .attachment {
+    width: 760px;
+    height: 170px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.container .attachment .main {
+    margin-top: 15px;
+    width: 740px;
+    margin-left: 20px;
+}
+
+.container .attachment .main:hover {
+    cursor: pointer;
+    background-color: #f2f5f9;
+}
+
+.container .attachment .main .personalAtt {
+    position: relative;
+}
+
+.container .attachment .main .personalAtt .file .txt {
+    color: #414a60;
+    font-size: 14px;
+}
+
+.container .attachment .main .personalAtt .remove {
+    position: absolute;
+    right: 45px;
+    top: 0;
+}
+
+.submit_btn {
+    width: 200px;
+    height: 45px;
+    padding: 9px 15px;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #6adbcf;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+
+/* 简历管理结束 */
+/* 编辑模块信息开始 */
+
+.container .edit_personalInfo,
+.container .edit_expectedInfo,
+.container .new_internship,
+.container .edit_internship,
+.container .new_project,
+.container .edit_project,
+.container .new_education,
+.container .edit_education,
+.container .new_certificate,
+.container .edit_certificate,
+.container .edit_advantage {
+    width: 760px;
+    background-color: #f6f6f8;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.container h3 {
+    margin-left: 4px;
+}
+
+.container .box1 {
+    float: left;
+    width: 360px;
+    height: 60px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #24272e;
+}
+
+.container .box1:nth-child(odd) {
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.container .edit_personalInfo .box1 input,
+.container .internship_newInfo .box1 input,
+.container .internship_editInfo .box1 input,
+.container .project_newInfo .box1 input,
+.container .project_editInfo .box1 input,
+.container .education_newInfo .box1 input,
+.container .education_editInfo .box1 input,
+.container .box1 select,
+.container .edit_sex label {
+    border: 1px solid #e3e7ed;
+    box-sizing: border-box;
+}
+
+.container .box1 input:hover,
+.container .box1 select:hover,
+.container .edit_sex label:hover {
+    border: 1px solid #2cd7c8;
+}
+
+.container .box1 input:focus {
+    outline-color: #2cd7c8;
+    box-shadow: 0 1px 2px #96ebe4;
+}
+
+.container .box1 input {
+    width: 310px;
+    height: 25px;
+    padding: 8px;
+}
+
+.container select {
+    width: 310px;
+    height: 32px;
+    padding: 3px;
+}
+
+.container .pro {
+    display: none;
+}
+
+.container label {
+    width: 148px;
+    height: 32px;
+    display: inline-block;
+    background-color: #f6f6f8;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.container #male {
+    margin-right: 20px;
+}
+
+.container .edit_operation input {
+    display: inline-block;
+    width: 110px;
+    height: 35px;
+    border: 1px solid #e3e7ed;
+    background-color: #fff;
+    cursor: pointer;
+    margin-bottom: 7px;
+}
+
+.container .edit_operation input:hover {
+    opacity: 0.6;
+}
+
+.container .edit_operation input:focus,
+.container .edit_operation input:active {
+    outline-color: #e3e7ed;
+}
+
+.container .edit_operation .cancel {
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-left: 440px;
+}
+
+.container .edit_operation .complete {
+    background-color: #6adbcf;
+    color: #fff;
+}
+
+/* 编辑个人信息结束 */
+/* 编辑新增通用开始 */
+
+.container .edit_expectedInfo .box1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container .edit_expectedInfo .selSalary {
+    width: 140px;
+}
+
+.container .edit_expectedInfo #sal1,
+.container .edit_expectedInfo .zhi {
+    margin-right: 5px;
+}
+
+.container .new_internship .new_workingTime .oldTime,
+.container .new_internship .new_workingTime .newTime,
+.container .edit_internship .edit_workingTime .oldTime,
+.container .edit_internship .edit_workingTime .newTime,
+.container .new_project .new_projectTime .oldTime,
+.container .new_project .new_projectTime .newTime,
+.container .edit_project .edit_projectTime .oldTime,
+.container .edit_project .edit_projectTime .newTime {
+    width: 140px;
+    height: 30px;
+    padding: 5px;
+}
+
+.container .new_internship .new_workingTime .oldTime,
+.container .new_internship .new_workingTime .zhi,
+.container .edit_internship .edit_workingTime .oldTime,
+.container .edit_internship .edit_workingTime .zhi,
+.container .new_project .new_projectTime .oldTime,
+.container .new_project .new_projectTime .zhi,
+.container .edit_project .edit_projectTime .oldTime,
+.container .edit_project .edit_projectTime .zhi {
+    margin-right: 5px;
+}
+
+.container .new_internship .new_jobContent,
+.container .new_internship .new_workPerformance,
+.container .edit_internship .edit_jobContent,
+.container .edit_internship .edit_workPerformance,
+.container .new_project .new_projectContent,
+.container .new_project .new_projectPerformance,
+.container .edit_project .edit_projectContent,
+.container .edit_project .edit_projectPerformance,
+.container .new_education .new_schoolExperience,
+.container .edit_education .edit_schoolExperience,
+.container .edit_advantage .edit_perAdvantage {
+    width: 730px;
+    height: 155px;
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+.container .isInternship {
+    height: 40px;
+}
+
+.container .isInternship label {
+    width: 150px;
+}
+
+/* 编辑新增通用结束 */
+/* 编辑新增教育经历开始 */
+
+.container .new_education .education_newInfo .new_schoolName,
+.container .edit_education .education_editInfo .edit_schoolName {
+    width: 660px;
+}
+
+.container .new_education .education_newInfo .new_record,
+.container .edit_education .education_editInfo .edit_record {
+    margin-left: 5px;
+}
+
+.container .new_education .education_newInfo .new_schoolTime,
+.container .edit_education .education_editInfo .edit_schoolTime {
+    width: 680px;
+    margin-left: 5px;
+}
+
+.container .new_education .education_newInfo .new_schoolTime .oldTime,
+.container .edit_education .education_editInfo .edit_schoolTime .oldTime {
+    margin-right: 17px;
+}
+
+.container .new_education .education_newInfo .new_schoolTime .zhi,
+.container .edit_education .education_editInfo .edit_schoolTime .zhi {
+    margin-right: 17px;
+}
+
+/* 编辑新增教育经历结束 */
+/* 编辑个人优势开始 */
+
+.container .edit_advantage .edit_perAdvantage {
+    margin-top: 10px;
+    height: 135px;
+}
+
+/* 编辑个人优势结束 */
